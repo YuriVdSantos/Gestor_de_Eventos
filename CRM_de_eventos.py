@@ -1,18 +1,21 @@
-nome = input("Nome: ")
-endereço = input("Endereço: ")
-telefone = input("Telefone: ")
-email = input("Email: ")
-empresa = input("Empresa: ")
-ramo =  input("Ramo: ")
+dnovo = 's'
+
+while dnovo == 's':
+    
+    i = 0
+    c = input("Digite o cliente que deseja cadastrar: ")
 
 
-print("Nome: %s" % nome)
-print("Endereço: %s" % endereço)
-print("Telefone: %s" % telefone)
-print("Email: %s" % email)
-print("Empresa: %s" % empresa)
-print("Ramo: %s" % ramo)
 
-cliente_1 = {nome, endereço, telefone, email, empresa, ramo}
+    nome = input("Nome: ")
+    endereço = input("Endereço: ")
+    telefone = input("Telefone: ")
+    email = input("Email: ")
+    empresa = input("Empresa: ")
+    ramo =  input("Ramo: ")
+    cidade = input("Cidade: ")
 
-print(cliente_1)
+    c = {nome, endereço, telefone, email, empresa, ramo, cidade}
+    print(c)
+
+    dnovo = input("Deseja cadastrar outro cliente? (s/n) ")
